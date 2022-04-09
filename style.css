@@ -54,6 +54,16 @@ html {
     font-size: 2em;
 }
 
+.intro .icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro .icons a {
+    padding: 10px 0px;
+    color: var(--primary);
+}
+
 .intro .desc {
     font-family: 'Bitter', serif;
     font-size: 1.5vw;
@@ -94,8 +104,7 @@ html {
 .about {
     text-align: center;
     font-family: 'montserrat', serif;
-    font-size: 1.4em;
-    padding: 0px 6.5vw;
+    font-size: 2em;
     margin-top: 120px;
 }
 
@@ -103,8 +112,27 @@ html {
     font-family: 'DM Serif Display', serif;
 }
 
-.about p {
-    text-align: center;
+.aboutContent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutContent img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 40px;
+}
+
+.aboutContent p {
+    text-align: left;
+    font-size: 0.7em;
+    opacity: 0.8;
+}
+
+.aboutContent .skills {
+    font-size: 0.8em;
+    font-family: 'Bitter', serif;
 }
 
 .projects {
@@ -117,6 +145,7 @@ html {
 }
 
 .project {
+    margin-bottom: 30px;
     color: var(--primary);
     background-color: var(--grey);
     padding: 20px;
@@ -174,7 +203,7 @@ html {
 
 .contacts {
     font-size: 1.4em;
-    margin-top: 120px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,11 +231,27 @@ html {
 }
 
 .contact .info .key {
-    font-family: 'Bitter', serif;
+    font-family: 'DM Serif Display', serif;
     font-weight: 600;
 }
 
 .contact .info .val {
-    font-family: 'montserrat', serif;
+    font-family: 'Bitter', serif;
     font-size: 0.8em;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Bitter', serif;
+    width: 100%;
+    background-color: var(--primary);
+    position: absolute;
+    left: 0px;
+    color: var(--white);
+}
+
+.footer h4 {
+    padding-top: 40px;
+    font-weight: 300;
+    opacity: 0.6;
 }
