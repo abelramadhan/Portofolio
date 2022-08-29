@@ -1,0 +1,131 @@
+:root {
+    --darkBlue: #0a192f;
+    --white: #e6f1ff;
+    --grey: #a8b2d1;
+    --teal: #64ffda;
+    --light-navy: #112240;
+    --sans: 'Inter', sans-serif;
+    --mono: 'Roboto Mono', monospace;
+    --base: 8;
+}
+
+header .dropdown {
+    color: var(--white);
+    font-size: 24px;
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        display: block;
+        position: absolute;
+        top: 80px;
+        height: 0%;
+        overflow: hidden;
+        opacity: 0%;
+        left: 0%;
+        z-index: 1;
+        background-color: var(--light-navy);
+        width: 100%;
+        height: fit-content;
+        padding: 30px;
+        margin: 0px;
+        transition: height 1s ease-in-out, opacity 0.2s ease-in-out;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 2;
+        font-size: 1.2em;
+    }
+
+    nav ul .button {
+        margin: 20px 0px 20px 10px;
+        padding: 0px;
+    }
+
+    header {
+        padding: 16px;
+    }
+
+    header .dropdown {
+        display: block;
+        z-index: 6;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        padding: 32px;
+    }
+
+    .about {
+        margin: 0px;
+        padding: 0px;
+        align-self: center;
+    }
+
+    .about .desc{
+        flex-direction: column;
+    }
+
+    .about .desc img {
+        width: 100%;
+        height: 200px;
+        object-position: 50% 16%;
+        margin-bottom: 24px;
+    }
+
+    .about .desc .desc-col {
+        width: 100%;
+    }
+    
+    aside {
+        margin-top: 80px;
+    }
+
+    aside .project-container {
+        flex-direction: column;
+    }
+
+    aside .project-container .project {
+        flex-direction: column;
+    }
+
+    aside .project-container .project img{
+        width: 400px;
+        height: 240px;
+    }
+
+    aside .project-container .project .project-desc {
+        text-align: right;
+        right: 0px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    aside .other-projects {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 0px;
+        width: 90%;
+    }
+
+    aside .other-projects .project {
+        width: 100%;
+        height: 200px;
+        margin: 0px;
+    }
+
+    .contact .contact-card p{
+        font-size: 0.8em;
+    }
+
+    .contact .contact-card {
+        padding: 40px;
+    }
+
+}
