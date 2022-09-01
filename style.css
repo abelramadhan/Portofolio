@@ -186,7 +186,7 @@ main {
     height: 2px;
     background-color: #a8b2d154;
     content: "";
-    margin-left: 1.5rem;
+    margin-left: 20px;
 }
 
 .about {
@@ -286,7 +286,7 @@ aside .project-container .project  h5 {
 
 aside .project-container .project .project-desc .title {
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 aside .project-container .project .project-desc .slug {

@@ -55,6 +55,10 @@ header .dropdown {
         z-index: 6;
     }
 
+    .hero .big {
+        font-size: 60px;
+    }
+
     .content {
         flex-direction: column;
         justify-content: center;
@@ -70,6 +74,7 @@ header .dropdown {
 
     .about .desc{
         flex-direction: column;
+        max-width: 400px;
     }
 
     .about .desc img {
